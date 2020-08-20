@@ -1,0 +1,18 @@
+<h1>All animals</h1>
+
+<ol>
+  @foreach (Animal animal in Model)
+  {
+    <ul>
+      <li>
+        ID: @animal.AnimalId <br>
+        Name: @animal.Name <br>
+        Species: @animal.Species <br>
+        Age: @animal.Age <br>
+        Gender: @animal.Gender <br>
+      </li>
+    </ul>
+    <a href="/Animals/Details/@(animal.AnimalId)">View Details</a>
+    <br>
+  }
+</ol>
